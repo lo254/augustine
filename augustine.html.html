@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio and professional biography of Augustine Mutua Musembi, ICT professional, technical support specialist, and ICT educator in Kenya.">
+<title>Augustine Mutua Musembi | ICT Professional</title>
+<style>
+:root{--bg:#08111f;--panel:#101d30;--panel2:#14243b;--text:#edf4ff;--muted:#a9b9cf;--accent:#55d6be;--accent2:#8eb8ff;--line:#263852;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:10;background:rgba(8,17,31,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}.brand{font-weight:800;letter-spacing:.3px}.brand span{color:var(--accent)}nav{display:flex;gap:19px;flex-wrap:wrap;font-size:.92rem}nav a{color:var(--muted)}
+.hero{padding:82px 0 66px;background:radial-gradient(ellipse at 80% 20%,#173c4c 0,transparent 38%),radial-gradient(ellipse at 12% 10%,#1b2c50 0,transparent 36%)}
+.hero-grid{display:grid;grid-template-columns:1.45fr .8fr;gap:44px;align-items:center}.eyebrow{color:var(--accent);font-size:.83rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.06;letter-spacing:-2px;margin:14px 0 20px}h1 span{color:var(--accent)}.lead{font-size:1.14rem;color:var(--muted);max-width:680px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:750;border:1px solid var(--accent);background:var(--accent);color:#06201f}.btn.secondary{background:transparent;color:var(--text);border-color:var(--line)}
+.hero-card{background:linear-gradient(150deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 24px 60px #0003}
+.profile-photo{display:block;width:100%;max-width:280px;height:300px;object-fit:cover;object-position:center 32%;border-radius:18px;border:1px solid var(--line);margin:0 auto 18px;box-shadow:0 14px 34px #0004}.photo-caption{font-size:.92rem;margin:0 0 8px!important;color:var(--accent)!important}
+.hero-card h2{margin:0 0 4px;font-size:1.3rem}.hero-card p{color:var(--muted);margin:0}.quick{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.quick div{padding:13px;border:1px solid var(--line);border-radius:12px}.quick strong{display:block;color:var(--accent);font-size:1.15rem}.quick small{color:var(--muted)}
+section{padding:70px 0}.section-head{max-width:720px;margin-bottom:30px}.kicker{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:1.8px;font-size:.78rem}h2.section-title{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:8px 0 12px;letter-spacing:-.7px}.section-head p,.muted{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:22px}.card h3{margin:0 0 8px;font-size:1.12rem}.card p{color:var(--muted);margin:0}.icon{font-size:1.5rem;margin-bottom:12px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:26px}.timeline{border-left:2px solid var(--line);padding-left:22px}.item{position:relative;padding:0 0 25px}.item:before{content:"";position:absolute;left:-29px;top:8px;width:12px;height:12px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 4px var(--bg)}.date{font-size:.83rem;color:var(--accent);font-weight:800;letter-spacing:.4px}.item h3{margin:4px 0}.item p{color:var(--muted);margin:5px 0}
+.tags{display:flex;gap:9px;flex-wrap:wrap}.tag{border:1px solid var(--line);background:var(--panel);color:#dbe7f7;padding:8px 11px;border-radius:9px;font-size:.91rem}
+.education{display:grid;gap:14px}.edu{padding:18px 20px;border-radius:14px;background:var(--panel);border:1px solid var(--line)}.edu h3{margin:0}.edu .date{display:block;margin:4px 0 7px}.edu p{margin:0;color:var(--muted)}
+.contact-panel{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:linear-gradient(135deg,#12263a,#101d30);border:1px solid var(--line);border-radius:22px;padding:28px}.contact-list{display:grid;gap:12px}.contact-item{padding:13px;border:1px solid var(--line);border-radius:12px;overflow-wrap:anywhere}.contact-item small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-size:.72rem}.contact-item strong{font-weight:650}
+/* Bio extra styles */
+.bio-long{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:26px 30px;margin-top:26px}
+.bio-long p{margin:0 0 18px;color:#d1def0;font-size:1.02rem;line-height:1.8}
+.bio-long p:last-child{margin-bottom:0}
+.bio-long strong{color:var(--accent);font-weight:600}
+.bio-highlight{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 10px}
+.bio-highlight span{background:rgba(85,214,190,.08);border:1px solid var(--line);border-radius:30px;padding:6px 18px;font-size:.9rem;color:var(--accent2)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid,.two-col,.contact-panel{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.hero{padding-top:54px}nav{gap:10px}.nav-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.quick{grid-template-columns:1fr 1fr}section{padding:52px 0}h1{letter-spacing:-1px}.hero-card{padding:20px}.bio-long{padding:20px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#home">AUGUSTINE<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">ICT Professional · Kenya</div>
+      <h1>Augustine Mutua<br><span>Musembi</span></h1>
+      <p class="lead">I help people and organisations get more from technology through computer maintenance, troubleshooting, networking, software installation, and clear, practical ICT training.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Get in touch</a>
+        <a class="btn secondary" href="#experience">Explore my experience</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <img class="profile-photo" src="augustine-photo.jpg" alt="Portrait of Augustine Mutua Musembi" />
+      <h2>Augustine Mutua Musembi</h2>
+      <p class="photo-caption">ICT Professional · Kenya</p>
+      <h2 style="margin-top:14px">ICT Support & Technical Services</h2>
+      <p>Practical problem-solving, user support, and technology education.</p>
+      <div class="quick">
+        <div><strong>2023–2025</strong><small>ICT studies</small></div>
+        <div><strong>2021</strong><small>Cisco IT Essentials</small></div>
+        <div><strong>Hardware</strong><small>Repair & maintenance</small></div>
+        <div><strong>Networking</strong><small>LAN & connectivity</small></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ========== ABOUT ME (EXPANDED BIOGRAPHY) ========== -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">About me</div>
+      <h2 class="section-title">Technology-minded, practical, and always learning.</h2>
+      <p>My professional background combines ICT training, hands-on technical support, and classroom teaching. I enjoy diagnosing problems, explaining solutions clearly, and helping people use technology safely and effectively.</p>
+    </div>
+
+    <!-- longer biography -->
+    <div class="bio-long">
+      <p><strong>Early curiosity & foundation.</strong> My journey into technology began long before formal training. Growing up in Kenya, I was the person friends and family called when a phone froze, a laptop slowed down, or a printer refused to cooperate. That early troubleshooting—often with limited tools and plenty of trial and error—taught me resourcefulness and deepened my curiosity about how systems work. I completed my primary education at <strong>Watuka Primary School</strong> (2009–2016), where access to the computer lab was a rare treat that quickly became a passion. I sat my KCPE in 2016 and moved on to <strong>St. Adrian Kiongwan Boys High School</strong>, where I balanced academics with self-taught exploration of computer hardware. I completed my KCSE in 2020, eager to turn my hobby into a profession.</p>
+
+      <p><strong>Formal training & certifications.</strong> In May 2021, I enrolled at the <strong>Christian Industrial Training Centre (CITC)</strong>, where I gained structured, hands-on experience in hardware repair, software troubleshooting, networking, and system configuration. The programme gave me a solid foundation in IT support and cybersecurity basics, and it confirmed that I wanted to build a career in this field. That same year, I earned the <strong>Cisco Networking Academy IT Essentials</strong> certification (September 2021), which broadened my understanding of operating systems, mobile devices, printers, cloud connectivity, and troubleshooting methodologies. These credentials were more than certificates—they gave me a professional vocabulary and a systematic approach to problem-solving.</p>
+
+      <p><strong>Internship & real-world experience.</strong> From September to December 2021, I interned at <strong>Fastown E.A Ltd</strong>, where I moved from theory to practice. I installed Windows operating systems, created bootable USB drives, diagnosed desktop and laptop hardware faults, assisted with motherboard-level diagnostics, configured LAN and internet connections, and supported server maintenance including RAID configuration. That experience taught me the importance of patience, documentation, and clear communication—especially when explaining technical issues to non-technical colleagues. It also showed me that a good IT professional never stops learning.</p>
+
+      <p><strong>Teaching & giving back.</strong> Between January 2023 and December 2025, I pursued a Diploma in Information Communication Technology at <strong>Ahmed Shahame Mwidani Technical Training Institute</strong>, deepening my knowledge of computer maintenance, operating systems, networking, internet troubleshooting, system security, and practical diagnostics. During this period, I also completed an ICT teaching internship at <strong>Shariff Nassir Girls Secondary School</strong> (January–March 2026). I prepared and delivered both theoretical and practical ICT lessons to Grade 10 students, guided learners through computer applications, hardware, software, and networking basics, conducted assessments, and helped maintain the ICT laboratory. Teaching was a transformative experience: it forced me to simplify complex concepts, adapt to different learning styles, and lead with empathy. I also emphasised safe and responsible use of technology—a value I carry into every professional role.</p>
+
+      <p><strong>Who I am today.</strong> I am an ICT professional who bridges technical expertise and human-centred support. I value <strong>honesty, reliability, attention to detail, teamwork, time management, and continuous learning</strong>. Whether I am troubleshooting a network outage, upgrading hardware, or helping a student understand IP addressing, my goal is the same: to make technology work smoothly and to empower the people who use it. I am currently open to opportunities in ICT support, computer maintenance, networking, technical services, and ICT education—where I can contribute, grow, and make a meaningful difference.</p>
+
+      <div class="bio-highlight">
+        <span>📍 Based in Kenya</span>
+        <span>🗣 English & Kiswahili</span>
+        <span>🎓 Cisco IT Essentials certified</span>
+        <span>💻 Hardware & networking</span>
+        <span>📚 Lifelong learner</span>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:30px">
+      <div class="card">
+        <h3>My professional story</h3>
+        <p>From self-taught fixes in my hometown to certified IT training and classroom teaching, my path has been hands-on and purposeful. I studied Information Communication Technology at Ahmed Shahame Mwidani Technical Training Institute (2023–2025), built on earlier IT training at Christian Industrial Training Centre (2021), and gained invaluable experience through internships at Fastown E.A Ltd and Shariff Nassir Girls Secondary School.</p>
+      </div>
+      <div class="card">
+        <h3>How I work</h3>
+        <p>I value honesty, reliability, attention to detail, teamwork, time management, and continuous learning. I aim to provide dependable support, solve problems methodically, and make technical information understandable to both technical and non-technical users. I believe good IT support is as much about listening as it is about fixing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:#0b1626">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">What I can do</div><h2 class="section-title">Technical skills</h2><p>Core skills developed through formal training, certification, and practical experience.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">🖥️</div><h3>Computer hardware</h3><p>Desktop and laptop assembly, component diagnosis and replacement, preventive maintenance, and hardware troubleshooting.</p></article>
+      <article class="card"><div class="icon">⚙️</div><h3>Operating systems & software</h3><p>Windows installation and troubleshooting, basic Linux knowledge, application installation, bootable USB creation, updates, and system maintenance.</p></article>
+      <article class="card"><div class="icon">🌐</div><h3>Networking</h3><p>LAN setup, router and switch basics, internet configuration, IP addressing fundamentals, and connectivity troubleshooting.</p></article>
+      <article class="card"><div class="icon">🛠️</div><h3>IT support</h3><p>User support, technical diagnostics, printer setup and sharing, routine upgrades, and service-oriented troubleshooting.</p></article>
+      <article class="card"><div class="icon">🔐</div><h3>Security fundamentals</h3><p>Basic cybersecurity practices, safe internet use, data protection, and virus detection and prevention.</p></article>
+      <article class="card"><div class="icon">🎓</div><h3>ICT teaching</h3><p>Lesson preparation, practical demonstrations, student guidance, assessment, communication, and explaining complex concepts simply.</p></article>
+    </div>
+    <h3 style="margin:28px 0 14px">Professional strengths</h3>
+    <div class="tags"><span class="tag">Problem-solving</span><span class="tag">Communication</span><span class="tag">Teamwork</span><span class="tag">Attention to detail</span><span class="tag">Time management</span><span class="tag">Adaptability</span><span class="tag">Integrity</span><span class="tag">Willingness to learn</span></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">My journey</div><h2 class="section-title">Experience</h2><p>Practical experience in both technical services and education.</p></div>
+    <div class="timeline">
+      <article class="item"><div class="date">22 JANUARY – 31 MARCH 2026</div><h3>ICT Teacher (Internship) · Shariff Nassir Girls Secondary School</h3><p>Prepared and delivered theoretical and practical ICT lessons for Grade 10 students; guided learners in computer applications, hardware, software, and networking basics; conducted assessments; supported ICT laboratory maintenance; and promoted safe, responsible use of technology.</p></article>
+      <article class="item"><div class="date">SEPTEMBER – DECEMBER 2021</div><h3>IT Intern · Fastown E.A Ltd</h3><p>Installed software and Windows operating systems, created bootable USB drives, diagnosed desktop and laptop hardware faults, assisted with motherboard diagnostics, configured LAN and internet connections, supported server maintenance including RAID configuration, and performed routine maintenance and upgrades.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="education" style="background:#0b1626">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Learning & development</div><h2 class="section-title">Education and certification</h2></div>
+    <div class="two-col">
+      <div class="education">
+        <article class="edu"><h3>Ahmed Shahame Mwidani Technical Training Institute</h3><span class="date">January 2023 – December 2025</span><p>Information Communication Technology (ICT), including computer maintenance, operating systems, networking, internet troubleshooting, system security, and practical diagnostics.</p></article>
+        <article class="edu"><h3>Christian Industrial Training Centre (CITC)</h3><span class="date">May 2021 – September 2021</span><p>Information Technology / ICT, with hands-on learning in hardware repair, software troubleshooting, networking, system configuration, cybersecurity basics, and IT support.</p></article>
+        <article class="edu"><h3>St. Adrian Kiongwan Boys High School</h3><span class="date">January 2017 – April 2021 · KCSE examination in 2020</span><p>Kenya Certificate of Secondary Education.</p></article>
+        <article class="edu"><h3>Watuka Primary School</h3><span class="date">January 2009 – November 2016</span><p>Kenya Certificate of Primary Education, completed in 2016.</p></article>
+      </div>
+      <div>
+        <article class="card"><div class="icon">🏅</div><h3>Cisco Networking Academy — IT Essentials</h3><p>Completed 1 September 2021. Covered computer hardware, troubleshooting methods, operating system installation, networking fundamentals, internet and cloud connectivity, mobile device support, printer installation and sharing, and basic cybersecurity.</p></article>
+        <article class="card" style="margin-top:14px"><h3>Career objective</h3><p>To build a career in ICT where I can apply my technical knowledge, continue developing professionally, and contribute positively to an organisation's growth and reliable technology operations.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Beyond work</div><h2 class="section-title">A little more about me</h2></div>
+    <div class="cards">
+      <article class="card"><div class="icon">📚</div><h3>Reading novels</h3><p>I enjoy reading novels as a way to learn, relax, and explore different ideas and perspectives. Fiction has taught me empathy and storytelling—skills that help in teaching and client support.</p></article>
+      <article class="card"><div class="icon">🧭</div><h3>Exploring new places</h3><p>Discovering new places helps broaden my perspective and connect with different environments and people. I enjoy road trips and learning about local cultures.</p></article>
+      <article class="card"><div class="icon">🚀</div><h3>Continuous improvement</h3><p>I am self-motivated and keen to keep learning, adapt to emerging technologies, and strengthen my professional capabilities. I regularly follow tech blogs and practice new skills in my home lab.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:#0b1626">
+  <div class="wrap">
+    <div class="contact-panel">
+      <div><div class="kicker">Contact</div><h2 class="section-title">Let's connect.</h2><p class="muted">I welcome opportunities in ICT support, computer maintenance, networking, technical services, and ICT education.</p><p class="muted">For professional enquiries, feel free to reach out using the details below.</p><a class="btn" href="mailto:agastynl@gmail.com">Email me</a></div>
+      <div class="contact-list">
+        <div class="contact-item"><small>Email</small><strong><a href="mailto:agastynl@gmail.com">agastynl@gmail.com</a></strong></div>
+        <div class="contact-item"><small>Phone</small><strong><a href="tel:+254790780466">+254 790 780 466</a></strong></div>
+        <div class="contact-item"><small>Languages</small><strong>English · Kiswahili</strong></div>
+        <div class="contact-item"><small>Location</small><strong>Kenya</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> Augustine Mutua Musembi</span><span>Personal portfolio · ICT Professional</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
